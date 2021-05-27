@@ -8,6 +8,7 @@
             </navbar-toggle-button>
             <router-link class="navbar-brand" to="/">
                 <img :src="logo" class="navbar-brand-img" alt="...">
+                우리방입니다요
             </router-link>
 
             <slot name="mobile-right">
@@ -82,7 +83,7 @@
                 <!--Divider-->
                 <hr class="my-3">
                 <!--Heading-->
-                <h6 class="navbar-heading text-muted">Documentation</h6>
+                <h6 class="navbar-heading text-muted">봇 가이드</h6>
                 <!--Navigation-->
                 <ul class="navbar-nav mb-md-3">
                     <li class="nav-item">

@@ -7,8 +7,8 @@
                 
             </navbar-toggle-button>
             <router-link class="navbar-brand" to="/">
-                <img :src="logo" class="navbar-brand-img" alt="...">
-                우리방입니다요
+              <!--  <img :src="logo" class="navbar-brand-img" alt="..."> -->
+              <div style="margin-left:-10px;">MBTI Untact Open Chat</div>
             </router-link>
 
             <slot name="mobile-right">

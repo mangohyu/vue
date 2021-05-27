@@ -1,24 +1,24 @@
 <template>
   <div>
 
-    <base-header class="pb-6 pb-8 pt-5 pt-md-8 bg-gradient-success">
+    <base-header class="pb-6 pb-8 pt-5 pt-md-8 bg-gradient-kb">
       <!-- Card stats -->
       <b-row>
         <b-col xl="3" md="6">
-          <stats-card title="Total traffic"
+          <stats-card title="오늘 총 대화량"
                       type="gradient-red"
-                      sub-title="350,897"
+                      sub-title="35,897"
                       icon="ni ni-active-40"
                       class="mb-4">
 
             <template slot="footer">
               <span class="text-success mr-2">3.48%</span>
-              <span class="text-nowrap">Since last month</span>
+              <span class="text-nowrap">이번 달</span>
             </template>
           </stats-card>
         </b-col>
         <b-col xl="3" md="6">
-          <stats-card title="Total traffic"
+          <stats-card title="출석 수 (명)"
                       type="gradient-orange"
                       sub-title="2,356"
                       icon="ni ni-chart-pie-35"
@@ -26,12 +26,12 @@
 
             <template slot="footer">
               <span class="text-success mr-2">12.18%</span>
-              <span class="text-nowrap">Since last month</span>
+              <span class="text-nowrap">오늘</span>
             </template>
           </stats-card>
         </b-col>
         <b-col xl="3" md="6">
-          <stats-card title="Sales"
+          <stats-card title="가장 많은 포인트"
                       type="gradient-green"
                       sub-title="924"
                       icon="ni ni-money-coins"
@@ -45,7 +45,7 @@
 
         </b-col>
         <b-col xl="3" md="6">
-          <stats-card title="Performance"
+          <stats-card title="밀 수확량"
                       type="gradient-info"
                       sub-title="49,65%"
                       icon="ni ni-chart-bar-32"
@@ -67,8 +67,8 @@
           <card type="default" header-classes="bg-transparent">
             <b-row align-v="center" slot="header">
               <b-col>
-                <h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
-                <h5 class="h3 text-white mb-0">Sales value</h5>
+                <h6 class="text-light text-uppercase ls-1 mb-1">농산물 현황</h6>
+                <h5 class="h3 text-white mb-0">시세 변동 그래프</h5>
               </b-col>
               <b-col>
                 <b-nav class="nav-pills justify-content-end">
@@ -77,7 +77,7 @@
                        :active="bigLineChart.activeIndex === 0"
                        link-classes="py-2 px-3"
                        @click.prevent="initBigChart(0)">
-                      <span class="d-none d-md-block">Month</span>
+                      <span class="d-none d-md-block">밀</span>
                       <span class="d-md-none">M</span>
                   </b-nav-item>
                   <b-nav-item
@@ -85,7 +85,7 @@
                     :active="bigLineChart.activeIndex === 1"
                     @click.prevent="initBigChart(1)"
                   >
-                    <span class="d-none d-md-block">Week</span>
+                    <span class="d-none d-md-block">딸기</span>
                     <span class="d-md-none">W</span>
                   </b-nav-item>
                 </b-nav>

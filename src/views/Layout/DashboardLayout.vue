@@ -39,26 +39,25 @@
 
         <sidebar-item
                 :link="{
-                  name: 'Tables',
+                  name: '순위표',
                   path: '/tables',
-                  icon: 'ni ni-bullet-list-67 text-red'
+                  icon: 'ni ni ni-trophy text-red'
                 }">
         </sidebar-item>
 
         <sidebar-item
                   :link="{
-                    name: 'Login',
+                    name: '로그인',
                     path: '/login',
                     icon: 'ni ni-key-25 text-info'
                   }">
         </sidebar-item>
-        <sidebar-item
-                  :link="{
+      <!-- <sidebar-item :link="{
                     name: 'Register',
                     path: '/register',
                     icon: 'ni ni-circle-08 text-pink'
                   }">
-        </sidebar-item>
+        </sidebar-item> -->
       </template>
 
       <template slot="links-after">
